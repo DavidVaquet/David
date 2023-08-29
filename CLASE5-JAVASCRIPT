@@ -1,0 +1,33 @@
+
+let kms = Number(prompt("Ingresar el número de kilometros recorridos"));
+let gasPrice = 500; // Precio del Litro de Nafta
+let KmPerLit = 10;  // Kilometros por Litro
+let tollPrice = 100; // Precio del peaje
+
+let kmPrice = gasPrice / KmPerLit; // Precio por kilometro
+
+let total = kms * kmPrice;
+
+if(kms > 10){
+    total += tollPrice * (kms / 10)
+}
+console.log("El precio es de : " + total);
+
+
+let name = prompt("Ingresar tu nombre en Mayusculas:");
+
+if(name == name.toLowerCase()){
+    alert("Debe ingresar el nombre en Mayusculas")
+}
+else {
+    console.log(name);
+}
+
+let name = prompt("Ingrese su nombre en Mayusculas:");
+
+if(name == name.toUpperCase()){
+    console.log(name);
+}
+else {
+    alert("Debe ingresar su nombre en Mayusculas");
+}

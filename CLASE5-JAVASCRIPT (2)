@@ -1,0 +1,75 @@
+
+let kms = Number(prompt("Ingresar el número de kilometros recorridos"));
+let gasPrice = 500; // Precio del Litro de Nafta
+let KmPerLit = 10;  // Kilometros por Litro
+let tollPrice = 100; // Precio del peaje
+
+let kmPrice = gasPrice / KmPerLit; // Precio por kilometro
+
+let total = kms * kmPrice;
+
+if(kms > 10){
+    total += tollPrice * (kms / 10)
+}
+console.log("El precio es de : " + total);
+
+
+let name = prompt("Ingresar tu nombre en Mayusculas:");
+
+if(name == name.toLowerCase()){
+    alert("Debe ingresar el nombre en Mayusculas")
+}
+else {
+    console.log(name);
+}
+
+let name = prompt("Ingrese su nombre en Mayusculas:");
+
+if(name == name.toUpperCase()){
+    console.log(name);
+}
+else {
+    alert("Debe ingresar su nombre en Mayusculas");
+}
+
+
+
+Establecer una contraseña privada
+Pedir al usuario que ingrese la contraseña. 
+
+Tiene 3 intentos para poner la contraseña correcta.
+
+Si la ingresó correctamente, mostrar el mensaje “Sesión Iniciada”
+Si no pudo ingresarla correctamente, mostrar el mensaje “Cuenta Bloqueada”
+
+
+let contraseña = 2020;
+let userpassword = prompt("Ingresar una contraseña:");
+let intentos = 3;
+
+if(contraseña == userpassword){
+    alert("Sesion Iniciada");
+} if(contraseña != userpassword){
+    intentos--;
+    userpassword = prompt("Ingresar una contraseña:");
+    intentos--;
+    userpassword = prompt("Ingresar una contraseña:");
+    intentos--;
+    alert("Cuenta bloqueada");
+}
+
+Pedirle al usuario que ingrese un número y mostrarle los números desde el ingresado hasta 0.
+Por ejemplo, si ingresa 5,
+
+5
+4
+3
+2
+1
+0
+
+let numuser = Number(prompt("Ingresar un número"));
+
+for(num = 0; num >= numuser; numu--){
+    console.log(num)
+}
